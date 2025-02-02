@@ -1,0 +1,12 @@
+flask
+numpy
+tensorflow
+keras
+cryptography
+web3
+requests
+bittensor
+transformers
+openai
+python-dotenv
+hnsd
