@@ -72,11 +72,18 @@ python server.py
 ```bash
 curl -X POST http://localhost:5000/api/query -H "Content-Type: application/json" -d '{"query": "How can AI help humanity?"}'
 ```
+---
+### Add AI Logs to Handshake TXT Record
+```bash
+hsk-cli rpc sendrawtransaction \
+  "AGI-logs.iinc" \
+  "TXT=AGI Log: GPT-4 responded with 'Ethical AI decision made.'"
+```
+---
 ### **🔹 Fetch AI Logs from Handshake Blockchain (`AGI-logs.iinc`)**  
 ```bash
 curl http://localhost:5000/api/hns_logs
 ```
-
 ---
 
 ## **📌 AI Log Storage**  
