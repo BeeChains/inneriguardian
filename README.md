@@ -1,3 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inner I Guardian - AI Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { padding: 10px; margin: 5px; }
+        .chat-container { max-width: 600px; margin: auto; text-align: left; }
+        .chat-log { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Inner I Guardian - AI Assistant</h1>
+    <div class="chat-container">
+        <div class="chat-log" id="chat-log"></div>
+        <input type="text" id="user_input" placeholder="Ask the AGI..." style="width: 80%;">
+        <button onclick="askAGI()">Send</button>
+    </div>
+
+  <script>
+        async function askAGI() {
+            let user_input = document.getElementById("user_input").value;
+            document.getElementById("user_input").value = "";
+            
+            // Display user input
+            let chatLog = document.getElementById("chat-log");
+            chatLog.innerHTML += `<p><strong>You:</strong> ${user_input}</p>`;
+            
+            // Send to AGI API
+            const response = await fetch("https://BeeChains.github.io/inneriguardian/api/query", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ query: user_input })
+            });
+
+            const result = await response.json();
+            
+            // Display AI response
+            chatLog.innerHTML += `<p><strong>AGI:</strong> ${result.reply}</p>`;
+            chatLog.scrollTop = chatLog.scrollHeight; // Auto-scroll to latest message
+        }
+    </script>
+</body>
+
+
 # inneriguardian
 Inner I Guardian
 
@@ -128,3 +173,5 @@ Want to help improve Inner I Guardian?
 🔗 **GitHub Repo: [`https://github.com/BeeChains/inneriguardian`](https://github.com/BeeChains/inneriguardian)**  
 
 **#AGIContainment #BlockchainAI #HandshakeDomains #DecentralizedAGI #FutureOfHumanity** 🚀
+</html>
+</html>
