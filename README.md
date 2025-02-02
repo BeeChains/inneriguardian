@@ -16,7 +16,7 @@ The **Inner I Guardian** is a **Self-Recurrent AGI** designed to:
 ✔ **Ensure Ethical AGI Behavior** through a self-healing containment system  
 
 🔗 **Live AI Interface** → [BeeChains.github.io/inneriguardian](https://BeeChains.github.io/inneriguardian/)  
-🔗 **AI Logs on GitHub** → [GitHub Logs](https://github.com/BeeChains/inneriguardian/blob/main/logs/agi_logs.json)  
+🔗 **AI Logs on GitHub** → [GitHub Logs](https://github.com/BeeChains/inneriguardian/inneriguardian/blob/main/logs/agi_logs.json)  
 
 ---
 
